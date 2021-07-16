@@ -1,0 +1,150 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+html {
+  /* Color */
+  --hue: 264;
+
+  --background: hsl(var(--hue), 87%, 34%);
+  --details: hsl(var(--hue), 81%, 64%);
+
+  --white: #fafafa;
+  --header-title: #f4d35e;
+
+  /* Font */
+  /* Faz com que 1rem seja equivalente a 10px, facilitando a conversão de px para rem */
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+
+  width: 100%;
+  margin: 0 auto;
+
+  grid-template-areas:
+    'header header'
+    'left right';
+}
+
+header {
+  grid-area: header;
+
+  display: inline-block;
+
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+header h1 {
+  font: bold 3.5rem 'Poppins', sans-serif;
+
+  color: var(--white);
+}
+
+header h1 span {
+  color: var(--header-title);
+}
+
+#image {
+  grid-area: left;
+
+  background: url('/img/spaceman.svg') no-repeat top/contain;
+  background-position-x: -5rem;
+}
+
+main {
+  grid-area: right;
+
+  display: flex;
+  align-items: center;
+  margin-top: -12rem;
+}
+
+main .container {
+  width: min(36.3rem, 100%);
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font: bold 3.5rem 'Open Sans', sans-serif;
+
+  color: var(--white);
+}
+
+main input,
+main button {
+  display: block;
+  padding: 1rem;
+
+  font: normal 1.5rem 'Open Sans', sans-serif;
+
+  color: var(--white);
+}
+
+main input {
+  width: 80%;
+  border-bottom: 2px solid var(--details);
+  margin: 0 auto 2rem auto;
+
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+main button {
+  width: 30%;
+  margin: 2.5rem auto 2.5rem auto;
+  font-weight: bold;
+  background-color: var(--details);
+}
+
+main button:hover {
+  opacity: 0.8;
+}
+
+main p a {
+  margin-left: 10%;
+  color: var(--white);
+  font: normal 1.5rem 'Poppins', sans-serif;
+}
+
+img#star {
+  width: 1rem;
+  height: 1rem;
+  top: 50rem;
+  left: 150px;
+  position: fixed;
+  z-index: -1;
+  animation: showStar 5s infinite;
+}
+
+@keyframes showStar {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
