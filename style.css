@@ -139,6 +139,7 @@ main button {
 }
 
 main button:hover {
+  transition: 0.2s;
   opacity: 0.8;
 }
 
@@ -149,6 +150,7 @@ main p a {
 }
 
 main p a:hover {
+  transition: 0.2s;
   opacity: 0.8;
 }
 
@@ -205,11 +207,25 @@ main p a:hover {
     margin-top: -8rem;
   }
 
-  main .stars  {
+  main .stars {
     position: fixed;
     z-index: -1;
     width: 100%;
     height: 100%;
+  }
+
+  main button:hover,
+  main p a:hover {
+    opacity: 1;
+  }
+
+  main button:active,
+  main p a:active {
+    opacity: 0.8;
+  }
+
+  a {
+    -webkit-tap-highlight-color: transparent;
   }
 
   main p a {
