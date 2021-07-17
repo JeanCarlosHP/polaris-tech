@@ -77,11 +77,13 @@ header h1 span {
 }
 
 #image {
-  background: url('/img/spaceman.svg') no-repeat top/contain;
+  background: url('https://raw.githubusercontent.com/JeanCarlosHP/polaris-tech/master/img/spaceman.svg')
+    no-repeat top/contain;
 }
 
 #stars {
-  background: url('/img/stars.svg') no-repeat top/contain;
+  background: url('https://raw.githubusercontent.com/JeanCarlosHP/polaris-tech/master/img/stars.svg')
+    no-repeat top/contain;
 
   animation: showStar 2s infinite alternate;
 }
