@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src=".github/polaris-logo.png" alt="Polaris Tech Logo" title="PolarisTech" width="220px" />
+  <img src=".github/logo.png" alt="Polaris Tech Logo" title="PolarisTech" width="220px" />
 </h1>
 
 <div align="center">
