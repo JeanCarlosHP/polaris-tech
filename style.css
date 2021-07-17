@@ -70,18 +70,18 @@ header h1 span {
   color: var(--header-title);
 }
 
-#image {
+#image,
+#stars {
   grid-area: left;
-
-  background: url('/img/spaceman.svg') no-repeat top/contain;
   background-position-x: -5rem;
 }
 
-#stars {
-  grid-area: left;
+#image {
+  background: url('/img/spaceman.svg') no-repeat top/contain;
+}
 
+#stars {
   background: url('/img/stars.svg') no-repeat top/contain;
-  background-position-x: -5rem;
 
   animation: showStar 2s infinite alternate;
 }
@@ -158,5 +158,50 @@ main p a:hover {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+
+    width: 100%;
+
+    grid-template-areas:
+      'header'
+      'image'
+      'login';
+  }
+
+  header {
+    grid-area: header;
+
+    margin-top: 1rem;
+  }
+
+  header .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #image,
+  #stars {
+    grid-area: image;
+  }
+
+  main {
+    grid-area: login;
+
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  main p a {
+    margin-left: 0;
+  }
+
+  main p {
+    text-align: center;
   }
 }
