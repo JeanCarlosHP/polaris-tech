@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src=".github/polaris.png" alt="Polaris Tech" width="100%">
+  <img src=".github/polaris-tech.gif" alt="Polaris Tech Gif" width="100%">
 </p>
 
 ## 🚀 Tecnologias
