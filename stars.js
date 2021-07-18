@@ -18,7 +18,8 @@ window.addEventListener(
 createStar()
 
 async function createStar() {
-  const numberOfStars = 50
+  const isBigger = window.screen.height > 767
+  const numberOfStars = isBigger ? 50 : 30
 
   for (let i = 0; i < numberOfStars; i++) {
     const star = document.createElement('div')
