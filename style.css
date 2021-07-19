@@ -18,6 +18,7 @@ html {
 
   --white: #fafafa;
   --header-title: #f4d35e;
+  --soft-red: #ff6c6c;
 
   /* Font */
   /* Faz com que 1rem seja equivalente a 10px, facilitando a conversão de px para rem */
@@ -157,6 +158,22 @@ main p a {
 main p a:hover {
   transition: 0.2s;
   opacity: 0.8;
+}
+
+main .invalid-credencial {
+  visibility: hidden;
+  opacity: 0;
+}
+
+main .invalid-credencial.active {
+  visibility: visible;
+  opacity: 1;
+
+  margin-left: 10%;
+
+  color: var(--soft-red);
+
+  font: bold 1.3rem 'Poppins', sans-serif;
 }
 
 @keyframes showStar {
