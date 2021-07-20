@@ -185,7 +185,7 @@ main .invalid-credencial.active {
 
   color: var(--soft-red);
 
-  font: bold 1.3rem 'Poppins', sans-serif;
+  font: bold 1.3rem 'Open sans', sans-serif;
 }
 
 @keyframes showStar {
@@ -260,5 +260,9 @@ main .invalid-credencial.active {
 
   main p {
     text-align: center;
+  }
+
+  main .invalid-credencial p {
+    text-align: left;
   }
 }
