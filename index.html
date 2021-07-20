@@ -40,13 +40,22 @@
           <div class="invalid-credencial">
             <p>User or password is invalid.<br />Check and try again</p>
           </div>
-          <input id="user" type="text" placeholder="User" autocomplete="off" />
-          <input
-            id="pass"
-            type="text"
-            placeholder="Password"
-            autocomplete="off"
-          />
+          <form>
+            <label for="user" class="sr-only">User</label>
+            <input
+              id="user"
+              type="text"
+              placeholder="User"
+              autocomplete="off"
+            />
+            <label for="pass" class="sr-only">Password</label>
+            <input
+              id="pass"
+              type="text"
+              placeholder="Password"
+              autocomplete="off"
+            />
+          </form>
           <button id="login"><a href="#"></a>Login</button>
           <p><a href="#">Forgot your password?</a></p>
         </div>
